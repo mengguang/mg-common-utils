@@ -1,0 +1,4 @@
+Example:
+/opt/x/myreplicator -h192.168.40.128 -P3306 -umg -p123qwe  --self-server-id=1234 -R -t --start-position=1556 mysql-bin.000020 |mysql -f -S /tmp/mysql_3307.sock
+
+It will write the last log position and filename into /tmp/name_and_pos.
