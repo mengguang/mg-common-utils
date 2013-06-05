@@ -1,0 +1,9 @@
+use apr to write a useful web server.
+thread pool.
+static file.
+HTTP/1.0
+support GET
+Content-Length
+
+
+

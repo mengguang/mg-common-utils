@@ -1,0 +1,34 @@
+simple "Hello world" programm demo, compile, link and run.
+
+simple printf, comments.
+
+variables and assignment.
+
+simple data types. int, long, unsigned, char.
+
+array types, char *.
+
+functions, return type, arguments.
+
+reading input, simple scanf.
+
+constants, #define
+
+identifiers and keywords
+
+more gcc arguments and introduction, -o -Wall -c -E  -std
+
+more about printf, escape sequence.
+
+more about scanf.
+
+arithmetic operators, + - += -+ * / %  ++ --
+
+if, switch
+
+while, do while, for
+
+break, continue, goto
+
+struct, union, enum.
+

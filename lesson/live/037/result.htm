@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD> <TITLE>libcurl - the multiprotocol file transfer library</TITLE>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<link rel="STYLESHEET" type="text/css" href="/curl.css">
+<link rel="shortcut icon" href="http://curl.haxx.se/favicon.ico">
+<meta name="description" content="libcurl is a free and easy-to-use client-side URL transfer library, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP. libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, kerberos, HTTP form based upload, proxies, cookies, user+password authentication, file transfer resume, http proxy tunneling and more">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" LINK="#0000ff" VLINK="#808080" ALINK="red">
+<!-- first-line-in-body -->
+<table width="100%"><tr valign="top"><td> <a href="http://curl.haxx.se/"><img border="0" src="http://curl.haxx.se/ds-curlicon.png"
+width="99" height="37" alt="cURL"></a></td>
+<td align="center">
+<table><tr valign="top"><td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-9313125053076989";
+google_alternate_color = "3333FF";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_channel ="9544108509";
+google_ad_type = "text";
+google_color_border = "000000";
+google_color_bg = "F0F0F0";
+google_color_link = "0000ff";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</td><td>
+<a href="http://www.haxx.se/curl.html"><img border="0" width="150" height="60"
+src="http://curl.haxx.se/ad/haxx-curl-ad3.png" alt="Haxx ad"></a>
+</td>
+</tr></table>
+</td>
+<td align="right"><a
+href="http://curl.haxx.se/libcurl/"><img src="http://curl.haxx.se/ds-libcurlicon.png" border="0" alt="libcurl"
+width="99" height="37"></a></td></tr></table>
+<table cellspacing="0" cellpadding="5"><tr><td valign="top" align="left">
+<div class="libmenu">
+<div><a href="/" class="menuitem"><img border="0" src="/pix/left.png" alt="<">Front Page</a></div>
+<hr>
+<div class="libselect">libcurl index </div>
+<div><a href="/libcurl/c/" class="libitem" title="Functions provided by libcurl ">API &raquo;</a></div>
+<div><a href="/libcurl/abi.html" class="libitem" title="ABI guarantees between releases and more ">Binary Interface</a></div>
+<div><a href="/libcurl/bindings.html" class="libitem" title="Using libcurl powers within your language of choice! ">Bindings</a></div>
+<div><a href="/libcurl/competitors.html" class="libitem" title="Figure what competing libraries there are ">Competitors</a></div>
+<div><a href="/libcurl/c/example.html" class="libitem" title="Educational snippets of code ">Example Sources &raquo;</a></div>
+<div><a href="/libcurl/features.html" class="libitem" title="What makes libcurl special ">Features</a></div>
+<div><a href="/mail/list.cgi?list=curl-library" class="libitem" title="curl-library mailing list info and archives">Mailing List</a></div>
+<div><a href="/libcurl/relatedlibs.html" class="libitem" title="Related libraries that you might find useful together with libcurl">Related Libs</a></div>
+<div><a href="/libcurl/using/" class="libitem" title="How to use libcurl section">Using libcurl &raquo;</a></div>
+<div><a href="/libcurl/c/libcurl-tutorial.html" class="libitem" title="libcurl programming tutorial">Tutorial &raquo;</a></div>
+<div><a href="/libcurl/theysay.html" class="libitem" title="What developers using libcurl say about it">Testimonials</a></div>
+<div><a href="/search.html" class="libitem" title="Search the curl web site">Search</a></div>
+</div>
+<p>
+<p>
+<a href="http://sourceforge.net/projects/curl/"><img src="http://sourceforge.net/sflogo.php?group_id=976&amp;type=8" width="80" height="15" border="0" alt="curl's project page on SourceForge.net"></a>
+<p>
+ <a href="http://curl.haxx.se/sponsors.html">Sponsors</a>:<br>
+<a href="http://www.haxx.se/">Haxx</a>
+</td><td valign="top" align="left">
+<p class="bindingbox">
+<b>Bindings</b><br>
+<br>
+<a href="ada95/">Ada95</a><br>
+<a href="basic/">Basic</a><br>
+<a href="c/">C</a><br>
+<a href="cplusplus/">C++</a><br>
+<a href="ch/">Ch</a><br>
+<a href="cocoa/">Cocoa</a><br>
+<a href="d/">D</a><br>
+<a href="dylan/">Dylan</a><br>
+<a href="eiffel/">Eiffel</a><br>
+<a href="euphoria/">Euphoria</a><br>
+<a href="falcon/">Falcon</a><br>
+<a href="ferite/">Ferite</a><br>
+<a href="gambas/">Gambas</a><br>
+<a href="glib/">glib/GTK+</a><br>
+<a href="http://www.lonelycactus.com/guile-curl.html">Guile</a><br>
+<a href="haskell/">Haskell</a><br>
+<a href="ilerpg/">ILE/RPG</a><br>
+<a href="java/">Java</a><br>
+<a href="lisp/">Lisp</a><br>
+<a href="lua/">Lua</a><br>
+<a href="mono/">Mono</a><br>
+<a href="dotnet/">.NET</a><br>
+<a href="pascal2/">Object-Pascal</a><br>
+<a href="ocaml/">OCaml</a><br>
+<a href="pascal/">Pascal</a><br>
+<a href="perl/">Perl</a><br>
+<a href="php/">PHP</a><br>
+<a href="postgres/">Postgres</a><br>
+<a href="python/">Python</a><br>
+<a href="r/">R</a><br>
+<a href="rexx/">Rexx</a><br>
+<a href="ruby/">Ruby</a><br>
+<a href="scheme/">Scheme</a><br>
+<a href="slang/">S-Lang</a><br>
+<a href="smalltalk/">Smalltalk</a><br>
+<a href="spf/">SP-Forth</a><br>
+<a href="spl/">SPL</a><br>
+<a href="tcl/">Tcl</a><br>
+<a href="vb/">Visual Basic</a><br>
+<a href="foxpro/">Visual FoxPro</a><br>
+<a href="q/">Q</a><br>
+<a href="wx/">wxWidgets</a><br>
+<a href="xblite/">XBLite</a><br>
+</p>
+<center><img src="/ds-libcurl.jpg" width="466" height="181" alt="libcurl">
+</center>
+<br>
+<a href="/">cURL</a> <img alt=">" src="http://curl.haxx.se/arrow.png"> <b>libcurl Front Page</b>
+<h1 class="pagetitle"> libcurl - the multiprotocol file transfer library </h1>
+<p class="ingres">
+ libcurl is a <a href="/docs/copyright.html" title="free as in both free
+ speech and zero price!">free</a> and easy-to-use client-side URL transfer
+ library, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS,
+ LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and
+ TFTP. libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading,
+ HTTP form based upload, proxies, cookies, user+password authentication
+ (Basic, Digest, NTLM, Negotiate, Kerberos), file transfer resume, http proxy
+ tunneling and more!
+</p>
+<p class="ingres">
+ libcurl is highly portable, it builds and works identically on numerous
+ platforms, including Solaris, NetBSD, FreeBSD, OpenBSD, Darwin, HPUX, IRIX,
+ AIX, Tru64, Linux, UnixWare, HURD, Windows, Amiga, OS/2, BeOs, Mac OS X,
+ Ultrix, QNX, OpenVMS, RISC OS, Novell NetWare, DOS and more...
+</p>
+<p class="ingres">
+ libcurl is <a href="/docs/copyright.html">free</a>, <a
+ href="features.html#thread">thread-safe</a>, <a
+ href="features.html#ipv6">IPv6 compatible</a>, <a
+ href="features.html#features">feature rich</a>, <a
+ href="features.html#support">well supported</a>, <a
+ href="features.html#fast">fast</a>, <a href="features.html#docs">thoroughly
+ documented</a> and is already used by many known, big and successful <a
+ href="/docs/companies.html">companies</a> and numerous <a
+ href="/libcurl/using/apps.html">applications</a>.
+</p>
+<table><tr valign="top"><td>
+<p>
+ Go to the regular curl <a href="/download.html">download page</a> and get the
+ latest curl package, or one of the specific libcurl packages listed.
+<p>
+ You use libcurl with the provided <a href="c/">C API</a> or one of the almost
+ 40 available <a href="bindings.html">bindings</a>. The cURL team works hard
+ to keep the <a href="features.html#stableapi">API and ABI stable</a>.
+</td><td>
+<p>
+ Check out our <a href="using/">using libcurl</a> page for general hints and
+ advice, the <a href="competitors.html">free HTTP client library
+ comparison</a>.  or read the comparisons against <a
+ href="libwww.html">libwww</a> and <a href="wininet.html">WinInet</a>.
+<p>
+ libcurl is most probably the most portable, most powerful and most often used
+ C-based multi-platform file transfer library on this planet - be it open
+ source or commercial.
+</td></tr></table>
+<p>
+ Search this site, including all the mailing list archives:
+<br>
+<div id="cse" style="width: 100%;">Loading</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+  google.load('search', '1', {language : 'en', style : google.loader.themes.MINIMALIST});
+  google.setOnLoadCallback(function() {
+    var customSearchControl = new google.search.CustomSearchControl('011822591736674932359:hjyomzjfopc');
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    customSearchControl.draw('cse');
+  }, true);
+</script>
+</td></tr></table>
+<p>
+<a href="http://curl.haxx.se/donation.html"><img border="0" src="http://curl.haxx.se/pix/donate.png" alt="donate!"
+width="88" height="31"></a>
+<span class="aboutbox">
+Page updated May 06, 2013.<br>
+<a href="http://curl.haxx.se/about.html">web site info</a>
+</span>
+<center>
+<a class="bottomad" href="http://www.easyalgo.com/eaupload.aspx"
+title="Asp.net upload component">File upload with ASP.NET</a>
+</center>
+</BODY>
+</HTML>
